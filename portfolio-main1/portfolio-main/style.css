@@ -1,0 +1,366 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f7f6; 
+    color: #333; 
+}
+
+/* Navbar */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff; 
+}
+
+.nav-links {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: #007bff; 
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.nav-links::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #007bff; 
+    transition: width 0.4s ease;
+    -webkit-transition: width 0.4s ease;
+}
+
+.nav-links:hover::after {
+    width: 100%;
+    left: 0;
+    background: #0056b3;
+}
+
+.nav-links:hover {
+    color: #0056b3;
+}
+
+/* Header */
+.header {
+    background: #e9ecef; 
+    padding: 2rem 0;
+    text-align: center;
+    color: #343a40; 
+}
+
+/* Main */
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 10rem;
+    background: #ffffff; 
+    
+    height: 90vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    
+}
+
+.about {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: none;
+    padding-bottom: none;
+}
+
+.details {
+    max-width: 50%;
+}
+
+.details h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #007bff; 
+}
+
+.details p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #495057; 
+}
+
+.contact-btn {
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+    background-color: #007bff; 
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #0056b3; 
+}
+
+.image {
+    max-width: 40%;
+}
+
+.profile-img {
+   
+    max-width: 100%;
+    height: auto;
+}
+
+/* Sections */
+.about, .skills, .services, .work, .contact {
+    padding: 4rem 10rem;
+    background-color: #ffffff; 
+}
+
+.skills, .services {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15rem;
+    margin-bottom: none;
+    padding-bottom: none;
+}
+
+.works {
+    padding-top: 15rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #007bff; 
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #6c757d;
+}
+
+.about-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-img {
+    max-width: 60%;
+    height: auto;
+}
+
+.details-text {
+    max-width: 55%;
+    font-size: 1.2rem;
+    text-align: justify;
+    color: #495057; 
+}
+
+.works {
+    margin: 5rem 2rem;
+    padding-top: 10rem;
+    margin-bottom: none;
+    padding-bottom: none;
+    background-color: white;
+}
+
+.works h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.works-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.work-item {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;  
+}
+
+.work-item h4 {
+    margin-bottom: 1rem;
+    color: #007bff;
+}
+
+.work-item p {
+    margin-bottom: 1rem;
+    color: #495057; 
+}
+
+.work-item .btn {
+    display: inline-block;
+    text-align: center;
+    background-color: #007bff; 
+    color: white; 
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.work-item .btn:hover {
+    background-color: #0056b3; 
+}
+
+.skills-container, .services-container, .work-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skill, .service, .work-item {
+    background: #fff;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 2rem);
+    text-align: center;
+}
+
+.skill h4, .service h4, .work-item h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.skill p, .service p, .work-item p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Contact Me */
+.contact-me {
+    margin: 5rem 2rem;
+    padding: 2rem;
+    background-color: white; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-me h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #007bff; 
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    flex: 1;
+    padding: 1rem;
+    color: #495057; 
+}
+
+.contact-info p {
+    margin-bottom: 1rem;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    flex: 1;
+    padding: 1rem;
+    max-width: 500px;
+}
+
+.contact-form .form-label {
+    font-weight: bold;
+    color: #495057;
+}
+
+.contact-form .btn {
+    margin-top: 1rem;
+    background-color: #007bff; 
+    color: #ffffff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form .btn:hover {
+    background-color: #0056b3; 
+}
+
+
+.footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #343a40;
+    color: #ffffff;
+    margin-top: 2rem;
+}
+
+
+@media (max-width: 700px) {
+    .main, .about, .skills, .services, .work, .contact {
+        margin-bottom: 5rem;
+        padding: 5rem 2rem;
+    }
+
+    .details, .image, .about-details {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .details, .details-text, .contact-form {
+        max-width: 100%;
+    }
+
+    .contact-details {
+        flex-direction: column;
+    }
+
+    .contact-info, .contact-form {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .works-list {
+        flex-direction: column;
+    }
+
+    .skill, .service, .work-item {
+        flex: 1 1 100%;
+    }
+}
